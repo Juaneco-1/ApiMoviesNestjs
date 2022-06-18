@@ -17,7 +17,8 @@ export class MoviesService {
         return await this.movieModel.find();
     }
 
-    async getMovie(id){
+    async getMovie(id:string){
+        
         return await this.movieModel.findById(id);
     }
 
